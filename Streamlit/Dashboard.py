@@ -2,16 +2,17 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 
-hide_github_icon = """
-#GithubIcon {
-  visibility: hidden;
-}
-"""
-
-st.set_page_config(
-    page_title="LINAW: Ledger for Integrity, Neutrality, and Accountability on the Web",
-    page_icon="💡",
-    layout="wide"
+st.markdown(
+    """
+    <style>
+    .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
+    .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
+    .viewerBadge_text__1JaDK {
+        display: none;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
 )
 
 # Custom CSS
